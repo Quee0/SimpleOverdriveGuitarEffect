@@ -60,7 +60,7 @@ $P(\omega)\left[Q(\omega)\right]$ characteristics:
 <p align="center">
     (https://www.desmos.com/calculator/vwyactze44)
 </p>
-To derive amplitude-frequency function we must analyse mod of $G(j\omega)$.
+To derive amplitude-frequency function we must analyse mod.
 
 $$|G(j\omega)|=\sqrt{\frac{K^2}{(1+\omega^2 T^2)^2}+\frac{\omega^2 K^2 T^2}{(1+\omega^2 T^2)^2}}=\frac{K}{\sqrt{1+\omega^2 T^2}}$$
 
@@ -85,5 +85,51 @@ $$\boxed{f=\frac{1}{2\pi RC}+\frac{1}{2\pi R_oC}}$$
 
 ---
 
+### 3.2 Derivasion of voltage divider resistance values
+
+We consider loaded symetric voltage divier
+
+#### Impedance
+
+$$R_{eq1}=\frac{RR_o}{R+R_o}$$
+$$\lim_{R_o \to \infty} R_{eq1}= \lim_{R_o \to \infty}\frac{R}{\frac{R}{R_o}+1}=R$$
+$$R_{eq}=2\cdot R$$
+
+#### Flowing current loss
+
+$$I=\frac{V_{cc}}{R_{eq}}=\frac{V_{cc}}{2R}$$
+
+#### Thevenin's resistance
+
+$$R_{TH}=\frac{RR}{R+R}=\frac{R}{2} \Rightarrow R = 2\cdot R_{TH}$$
+
+#### Current loss vs Thevenin's resistance
+
+Substituting both equations:
+
+$$\boxed {I(R_{TH})=\frac{V_{cc}}{4\cdot R_{TH}}}$$
+
+Ideal voltage source should have $R_{TH} \to 0$, to be as stable as possible. Ideal current loss should be $I \to 0$. Graphing this function allow to pick optimal resistance values.
+
+$I(R_{TH})$  with $V_{cc}=9V$ characteristics:
+<p align="center">
+  <img src="img\desmos_voltage_divider_I(Rth).svg" width="400" alt="Podpis alternatywny">
+</p>
+<p align="center">
+    (https://www.desmos.com/calculator/zl9quwhx7r)
+</p>
+
+---
+
 ## 4. Element selection
+
+### 4.1 Voltage divider
+
+Using $I(R_{TH})=\frac{V_{cc}}{4\cdot R_{TH}}\qquad$ (3.2).
+Voltage divider should not drain more than $0.5 mA$, so:
+
+$$0.5 \cdot 10^-3 > \frac{9}{4\cdot R_{TH}}$$
+$$2 \cdot 10^-3 \cdot R_{TH} > 9$$
+$$R_{TH} > 4,5 \cdot 10^3 \Rightarrow \boxed{R > 9 k\Omega}$$
+
 
