@@ -71,9 +71,8 @@ $$G(s)=\frac{(\frac{R_o}{R_o+R})}{1+s(\frac{CRR_o}{R_o+R})}$$
 
 Then:
 
-'''
-**$$\boxed{G(s)=\frac{K}{1+sT}},\qquad   \boxed{K=\frac{R_o}{R_o+R}},\qquad   \boxed{T=\frac{CRR_o}{R_o+R}}$$**
-'''
+> [!NOTE]
+> **$$\boxed{G(s)=\frac{K}{1+sT}},\qquad   \boxed{K=\frac{R_o}{R_o+R}},\qquad   \boxed{T=\frac{CRR_o}{R_o+R}}$$**
 
 ---
 
@@ -122,7 +121,7 @@ Substitute T:
 $$f=\frac{R_o+R}{2\pi CRR_o}=\frac{R}{2\pi CRR_o}+\frac{R_o}{2\pi CRR_o}$$
 
 > [!NOTE]
->**$$\boxed{f=\frac{1}{2\pi RC}+\frac{1}{2\pi R_oC}}$$**
+> **$$\boxed{f=\frac{1}{2\pi RC}+\frac{1}{2\pi R_oC}}$$**
 
 ---
 
@@ -151,7 +150,7 @@ $$R_{TH}=\frac{RR}{R+R}=\frac{R}{2} \Rightarrow R = 2\cdot R_{TH}$$
 Substituting both equations:
 
 > [!NOTE]
->**$$\boxed {I(R_{TH})=\frac{V_{cc}}{4\cdot R_{TH}}}$$**
+> **$$\boxed {I(R_{TH})=\frac{V_{cc}}{4\cdot R_{TH}}}$$**
 
 Ideal voltage source should have $R_{TH} \to 0$, to be as stable as possible. Ideal current loss should be $I \to 0$. Graphing this function allow to pick optimal resistance values.
 
@@ -243,7 +242,7 @@ $$2 \cdot 10^{-3} \cdot R_{TH} > 9$$
 $$R_{TH} > 4,5 \cdot 10^3 \Rightarrow R_{1,2} > 9 k\Omega$$
 
 > [!NOTE]
->**$$\boxed{R_{1,2} = 10 k\Omega}$$**
+> **$$\boxed{R_{1,2} = 10 k\Omega}$$**
 
 ### 4.2 Pullup resistor
 
@@ -253,14 +252,14 @@ Maximal acceptable voltage drop is around $0,05 V$, so:
 $$R_3 = \frac{0,05}{45\cdot 10^{-9}} \approx 1,111 \cdot 10^6 \Omega \approx 1 M\Omega$$
 
 > [!NOTE]
->**$$\boxed{R_3 = 1M\Omega}$$**
+> **$$\boxed{R_3 = 1M\Omega}$$**
 
 ### 4.3 Input resistor
 
 It is standard current and voltage limiting resistor.
 
 > [!NOTE]
->**$$\boxed{R_4 = 100k\Omega}$$**
+> **$$\boxed{R_4 = 100k\Omega}$$**
 
 
 ### 4.4 Filtering, gain and volume potentiometers
@@ -269,12 +268,12 @@ Potentiometers were chosen based on availability and functionality.
 Picking $10k\Omega$ potentiometers grants optimal selection of coupling and decoupling capacitors to work with (look 4.5). Also in main feedback loop there is main bass level control, so not to do too many knobs we stuck to a static highpass filter. It also works with $10k\Omega$ potentiometer as volume control. it gives relatively low internal resistance of an effect.
 
 > [!NOTE]
->**$$\boxed{R_{V2,V3} = 10k\Omega}$$**
+> **$$\boxed{R_{V2,V3} = 10k\Omega}$$**
 
 Gain potentiometer was also chosen based on construction standards, but to make effect more customizable we chose $1M\Omega$ which grants more boost.
 
 > [!NOTE]
->**$$\boxed{R_{V1} = 1M\Omega}$$**
+> **$$\boxed{R_{V1} = 1M\Omega}$$**
 
 
 ### 4.5 Coupling/decoupling capacitors
@@ -288,7 +287,7 @@ $$R_{TH} = \frac{10k \cdot 10k}{10k + 10k} = 5k\Omega$$
 $$C_2 > \frac{1}{2\pi R_{TH} f} = \frac{1}{2\pi 5000 \cdot 0,01} \Rightarrow C_2 > 3,18 \mu F$$
 
 > [!NOTE]
->**$$\boxed{C_2 = 47 \mu F}$$**
+> **$$\boxed{C_2 = 47 \mu F}$$**
 
 Based on that selection to unify values and stick with industry standards $C_1$ is also $47 \mu F$. 
 It will work effectively with power supply and battery to supress instant voltage spikes.
@@ -301,7 +300,7 @@ We can pass everything above $0,3 Hz$:
 $$C_3 = \frac{1}{2\pi Rf} = \frac{1}{2\pi 10^6 \cdot 0,3} = 531 \cdot 10^{-9}$$
 
 > [!NOTE]
->**$$\boxed{C_3 = 470 nF}$$**
+> **$$\boxed{C_3 = 470 nF}$$**
 
 ---
 
@@ -316,14 +315,14 @@ We want low pass filte maximal cutoff point to be 5 kHz:
 $$5000 = \frac{1}{2\pi \cdot 10000 \cdot C }\Rightarrow C = \frac{1}{2\pi \cdot 10000 \cdot 5000} \approx 3,18 \cdot 10^{-9} F$$
 
 > [!NOTE]
->**$$\boxed{C_8 = 3,3 nF}$$**
+> **$$\boxed{C_8 = 3,3 nF}$$**
 
 We want high pass filter cutoff point to be 15.9Hz (it will be fixed, look 4.4):
 
 $$60 = \frac{1}{2\pi \cdot 10000 \cdot C }\Rightarrow C = \frac{1}{2\pi \cdot 10000 \cdot 10} \approx 3,18 \cdot 10^{-6}$$
 
 > [!NOTE]
->**$$\boxed{C_9 = 1 \mu F}$$**
+> **$$\boxed{C_9 = 1 \mu F}$$**
 
 
 ### 4.6 Active buffer
@@ -341,14 +340,14 @@ To give wide range of gain we picked $R_{V1} = 1 M\Omega$, for $1000x$ voltage b
 $$R = \frac{R_{V1}}{k+1} = \frac{1 M\Omega}{1000+1} \approx 999 \Omega$$
 
 > [!NOTE]
->**$$\boxed{R_5 = 1k\Omega}$$**
+> **$$\boxed{R_5 = 1k\Omega}$$**
 
 ---
 
 Based on this selection we choose $C_4$ value (using derivation from 3.1). Value of this capacitor controls the filtering before amplification. On guitar it can be described as pre amp bass control. To further customize the effect aditional switch was added. It has 3 possible cutoff frequencies. We chose typical values used in overdrives:
 
 > [!NOTE]
->**$$\boxed{C_4 = 220n, C_5 = 1\mu F, C_6 = 2,2 \mu F}$$**
+> **$$\boxed{C_4 = 220n, C_5 = 1\mu F, C_6 = 2,2 \mu F}$$**
 
 So based on chosen capacitance:
 
