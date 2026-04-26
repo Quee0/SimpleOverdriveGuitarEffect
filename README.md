@@ -71,8 +71,9 @@ $$G(s)=\frac{(\frac{R_o}{R_o+R})}{1+s(\frac{CRR_o}{R_o+R})}$$
 
 Then:
 
-> [!NOTE]
->**$$\boxed{G(s)=\frac{K}{1+sT}},\qquad   \boxed{K=\frac{R_o}{R_o+R}},\qquad   \boxed{T=\frac{CRR_o}{R_o+R}}$$**
+'''
+**$$\boxed{G(s)=\frac{K}{1+sT}},\qquad   \boxed{K=\frac{R_o}{R_o+R}},\qquad   \boxed{T=\frac{CRR_o}{R_o+R}}$$**
+'''
 
 ---
 
