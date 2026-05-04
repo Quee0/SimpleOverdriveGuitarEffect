@@ -2283,220 +2283,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_SP3T"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SP3T"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -15.875 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, three position, single pole triple throw, 3 position switch, SP3T"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch sp3t ON-ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SW* SP3T*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SP3T_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SP3T_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_SPDT_MSM"
 			(pin_names
 				(offset 0)
@@ -3545,6 +3331,12 @@
 		(uuid "c815a8db-fac2-4055-bb2d-eca202a42470")
 	)
 	(junction
+		(at 90.17 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cef73fed-5db5-4f3d-ab0d-7c5a5835fa72")
+	)
+	(junction
 		(at 80.01 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3649,6 +3441,16 @@
 			(type default)
 		)
 		(uuid "11534fd6-3cf6-4122-9533-033d86bbf792")
+	)
+	(wire
+		(pts
+			(xy 114.3 162.56) (xy 123.19 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12232c30-3132-4021-998f-04bc0a977624")
 	)
 	(wire
 		(pts
@@ -3772,6 +3574,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 152.4) (xy 90.17 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "268194b1-31c0-4807-aa60-5cfdd82aca87")
+	)
+	(wire
+		(pts
 			(xy 189.23 100.33) (xy 185.42 100.33)
 		)
 		(stroke
@@ -3849,16 +3661,6 @@
 			(type default)
 		)
 		(uuid "32701c95-ca01-46e1-935f-8d3588228509")
-	)
-	(wire
-		(pts
-			(xy 109.22 168.91) (xy 109.22 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3534840f-fd1d-4fe7-94a6-431c9cac2e3a")
 	)
 	(wire
 		(pts
@@ -4182,6 +3984,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 162.56) (xy 109.22 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "876aebee-8272-4540-993a-9b365f42b810")
+	)
+	(wire
+		(pts
 			(xy 97.79 116.84) (xy 93.98 116.84)
 		)
 		(stroke
@@ -4229,16 +4041,6 @@
 			(type default)
 		)
 		(uuid "8ece4f22-06c4-44b8-8480-276fde38a3ce")
-	)
-	(wire
-		(pts
-			(xy 92.71 166.37) (xy 92.71 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fcde968-2250-48b8-a0d3-4a2fcabc4de0")
 	)
 	(wire
 		(pts
@@ -4292,7 +4094,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 152.4) (xy 90.17 152.4)
+			(xy 90.17 152.4) (xy 111.76 152.4)
 		)
 		(stroke
 			(width 0)
@@ -4402,16 +4204,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 162.56) (xy 95.25 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b13e2779-d00f-46aa-9505-e3d8e1ef4bf8")
-	)
-	(wire
-		(pts
 			(xy 137.16 31.75) (xy 137.16 36.83)
 		)
 		(stroke
@@ -4462,6 +4254,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 162.56) (xy 123.19 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6604b4c-9643-4f98-97a7-2152d12bd1ac")
+	)
+	(wire
+		(pts
 			(xy 247.65 35.56) (xy 248.92 35.56)
 		)
 		(stroke
@@ -4499,16 +4301,6 @@
 			(type default)
 		)
 		(uuid "ce87871f-1e67-4ac5-b231-6000c5518cdf")
-	)
-	(wire
-		(pts
-			(xy 109.22 166.37) (xy 92.71 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2f430f9-5dea-480a-8ffd-174c904ef215")
 	)
 	(wire
 		(pts
@@ -4632,16 +4424,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 163.83) (xy 123.19 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6bf306d-34b8-4f78-adcd-1de9f026ed6a")
-	)
-	(wire
-		(pts
 			(xy 90.17 176.53) (xy 90.17 179.07)
 		)
 		(stroke
@@ -4659,16 +4441,6 @@
 			(type default)
 		)
 		(uuid "eddafcc1-1a87-48e2-ad84-ecb58d2bd657")
-	)
-	(wire
-		(pts
-			(xy 90.17 162.56) (xy 90.17 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef90132e-63eb-42cc-9dbb-93255c39e3a0")
 	)
 	(wire
 		(pts
@@ -4722,16 +4494,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 163.83) (xy 123.19 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd7239ad-40b7-4007-8f3e-2683c19ef4d6")
-	)
-	(wire
-		(pts
 			(xy 130.81 107.95) (xy 129.54 107.95)
 		)
 		(stroke
@@ -4761,7 +4523,7 @@
 		(uuid "0028bc4a-da26-464f-895e-b0a3d24b99fc")
 	)
 	(label "hpf preamp 1"
-		(at 97.79 163.83 0)
+		(at 123.19 167.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4831,7 +4593,7 @@
 		(uuid "81e6faf4-9f45-48bb-9d03-5f47ff46a280")
 	)
 	(label "hpf preamp 2"
-		(at 93.98 166.37 0)
+		(at 109.22 167.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4861,7 +4623,7 @@
 		(uuid "a988ebe3-2a49-4ca7-898c-e3377e4d46e5")
 	)
 	(label "hpf preamp 3"
-		(at 90.17 168.91 0)
+		(at 90.17 167.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6972,6 +6734,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPDT_MSM")
+		(at 111.76 157.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c77f8f8-b158-4c96-9e11-e819046adcb5")
+		(property "Reference" "SW4"
+			(at 116.84 157.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_SPDT_MSM"
+			(at 118.11 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x03_P7.8mm_D1.4mm_OD3.9mm"
+			(at 123.19 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw, center OFF position"
+			(at 111.76 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e7ee734a-58d7-4c06-8799-8cfe1df4bbb4")
+		)
+		(pin "3"
+			(uuid "8641898c-bba0-4e49-8e20-300820c3cfbe")
+		)
+		(pin "1"
+			(uuid "6811fbbd-df2d-40fb-b447-f81e2a204e18")
+		)
+		(instances
+			(project "overdrive_effect"
+				(path "/a2112edd-3554-46da-8451-fa9bb9fd8e93"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 78.74 50.8 0)
 		(unit 1)
@@ -8072,83 +7907,6 @@
 			(project "overdrive_effect"
 				(path "/a2112edd-3554-46da-8451-fa9bb9fd8e93"
 					(reference "FS5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SP3T")
-		(at 92.71 157.48 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b811e9f0-82ba-4409-9f34-f81bf02ad458")
-		(property "Reference" "SW4"
-			(at 97.79 157.4799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SW_SP3T"
-			(at 97.79 158.7499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x04_P7.8mm_D1.4mm_OD3.9mm"
-			(at 97.155 141.605 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, three position, single pole triple throw, 3 position switch, SP3T"
-			(at 92.71 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "55cd6e14-385f-44f9-a3df-c75aaac1203b")
-		)
-		(pin "1"
-			(uuid "e39111a0-10fc-46bd-b19e-f5a4c032e947")
-		)
-		(pin "3"
-			(uuid "53e04caf-e9e3-4b01-8116-ddb8cf565623")
-		)
-		(pin "4"
-			(uuid "1523d040-6b52-44b0-9ec2-76a1d0e60496")
-		)
-		(instances
-			(project "overdrive_effect"
-				(path "/a2112edd-3554-46da-8451-fa9bb9fd8e93"
-					(reference "SW4")
 					(unit 1)
 				)
 			)
