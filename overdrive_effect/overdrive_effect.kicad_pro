@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|127800000|74500000|e8e8cac2-df29-46e4-83e1-01a43bed1c3d|00000000-0000-0000-0000-000000000000",
+          "Potentiometer fix"
+        ]
+      ],
       "meta": {
         "version": 2
       },
