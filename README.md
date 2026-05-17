@@ -1,6 +1,6 @@
 # :fire::guitar:Simple Overdrive Effect
 <p align="center">
-  <img src="img\import\Animation_render_ezgif.com.gif" width="700" alt="Podpis alternatywny">
+  <img src="img\import\Animation_render_ezgif.com.gif" width="1200" alt="Podpis alternatywny">
 </p>
 
 ---
@@ -27,6 +27,20 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 <p align="center">
   <img src="img\import\circuit_render.png" width="1200" alt="Podpis alternatywny">
 </p>
+
+**Block Diagram Explanation**
+* **$V_{ref}$ set block** - steps down the 9V supply to create a 4.5V reference voltage, it allows to add DC part to an AC signal (center between 0V-9V power supply). Capacitors filter out power supply noise and stabilize this reference voltage.
+* **Power block** - DC barrel jack integrated with a hardware battery disconnect mechanism. When an external power supply is plugged in, the battery circuit is physically broken to prevent unwanted discharging.
+* **3PDT footswitch (True Bypass)** - Footswitch wiring schematic ensuring 100% mechanical true bypass. When the pedal is disengaged, the guitar signal routes directly to the output without passing through any electronic components, preserving maximum tone integrity. It also integrates LED indicators connection to ground when enabled. 
+* **LED ON/OFF indicator** - it visually indicates when pedal is enabled.
+* **input block and output block** - standard 6.3mm audio jack receiving/sending the instrument signal.
+* **board input block** - Coupling capacitor with $V_{ref}$ resistance acts like differenting circuit and blocks DC voltage. Additionally this capacitor loads up to $V_{ref}$ 4.5V voltage that adds DC part to a signal.
+* **overdrive main block** - the core of the effect, based on the LM358 operational amplifier. It handles signal amplification based on featback loop impedances and features a versatile clipping section, offering a choice between fast-switching diodes and LEDs. It also includes tonal modifications: a switchable LPF in the feedback loop (SW3) to smooth out high-end fizz, and a pre-gain HPF (SW4) to control the low-end "mass" entering the clipping stage.
+* **passive lowpass filter** - the classic Tone control section.
+* **buffer** - effectivly separates signal proccesing blocks from influencing one another.
+* **static passive high pass filter with volume control** - output coupling capacitor blocks the internal $V_{ref}$ DC part, outputting a pure AC audio signal centered at 0V. Potentiometer acts as a voltage divider providing precise Master Volume control.
+* **Fidutials and mounting** - purely mechanical parts to mount and produce PCB.
+* **LM358 power** - LM358 powering diagram.
 
 ---
 
