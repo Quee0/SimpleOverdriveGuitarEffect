@@ -1,7 +1,8 @@
-# Simple Overdrive Effect
+# :fire::guitar:Simple Overdrive Effect
 <p align="center">
   <img src="img\import\Animation_render_ezgif.com.gif" width="700" alt="Podpis alternatywny">
 </p>
+
 ---
 
 ## 1. Project overview
@@ -22,6 +23,10 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 ---
 
 ## 2. Circuit
+
+<p align="center">
+  <img src="img\import\circuit_render.png" width="1200" alt="Podpis alternatywny">
+</p>
 
 ---
 

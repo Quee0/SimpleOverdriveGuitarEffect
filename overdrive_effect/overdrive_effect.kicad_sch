@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "a2112edd-3554-46da-8451-fa9bb9fd8e93")
 	(paper "A4")
+	(title_block
+		(title "Ignis Overdrive effect")
+		(date "2026-05-17")
+		(rev "1.1")
+		(company "B. Kuskowski")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
 			(pin_names
@@ -9639,4 +9645,24 @@
 		)
 	)
 	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "Simple_no_comments.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WCvCP0TALadXSEAtxsWHGS5ac4JWlhdTV1ADhVlNM3CE2e+cSP//z/UEwFUAEwAVwAj/scf
+				if/jsXnSvtaTvZHzHRcNF7Vmfz60JL9WNFwWbT/Z8kv+BQAgICBF7+W0GBWnsqFzRLLqjN/Lft1j
+				wCiliDprX2zL7KMCICAoQyRO6IE2VAi06i/5f39NxFV7XqZSBq/t95z0ntlvxuCLPXtWIRCLX7v4
+				9ts/3+EV4ex11X99HDE457Rq1w6vV0XFLFr7otOalPZn78uqah+9+6DnibppNMzIMRhWtYRaiWZM
+				WrFsHEbTcB6ZY5OgCJd1WVdPShmWohdYSuuyB0fLcNyGInTD33vknE3Z/zrYpo79UgS6atPMVK+e
+				3/dNiigA/uIO7at2ickqAYGhKiqDYboeOWLHrJtKdqFYHItIl106TYtwGIawEpSsok02iIWAVvTe
+				tqF2XViTapNu68S3XaWVhrbf/cMNDqlBuFX93phxp7OT3gWjXbKLnywXivjrb6DRPIicmRIRSZIk
+				HWBEpAarG3zJ3Doc8/ualmv/1kFW5jSsq/Af4LKzbmLIt2Qb6DIbT4VIfHfLQZFGqCmW5yeeSDhy
+				+lrZ8137YUI+lJM9hCzEBNawDUG+A4Y8xB1b5OesLc+ODgbEmdPCJhor41Hh4BIoQ6Mh6KUExWTh
+				OHUQD7g/87f8KGb+kD2qwxAdefJBv7I1D/lsLJcI1jo6ayoOE8Toj1MelCt4c4AHxO1xz9USgkxg
+				FmPdmS89gdpax6VNENBc1QTpwVtEXAEME+RZZyYcQsdsEui8+ihE5Xx2GyR3quwgoc15+e1I4Cdz
+				x7BPgzY9X2/W+n8cH2E/ueuAPwamCg==|
+			)
+			(checksum "2C2193B0612104418D5E26DACA74AC72")
+		)
+	)
 )
