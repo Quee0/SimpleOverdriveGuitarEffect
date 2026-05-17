@@ -1,4 +1,7 @@
 # Simple Overdrive Effect
+<p align="center">
+  <img src="img\import\Animation_render_ezgif.com.gif" width="700" alt="Podpis alternatywny">
+</p>
 ---
 
 ## 1. Project overview
