@@ -23,6 +23,7 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 ---
 
 ## 2. Circuit
+### 2.1 Schematic Diagram
 
 <p align="center">
   <img src="img\import\circuit_render.png" width="1200" alt="Podpis alternatywny">
@@ -41,6 +42,14 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 * **static passive high pass filter with volume control** - output coupling capacitor blocks the internal $V_{ref}$ DC part, outputting a pure AC audio signal centered at 0V. Potentiometer acts as a voltage divider providing precise Master Volume control.
 * **Fidutials and mounting** - purely mechanical parts to mount and produce PCB.
 * **LM358 power** - LM358 powering diagram.
+
+### 2.1 PCB Layout
+
+<p align="center">
+  <img src="img\import\PCB_KiCAD.png" width="350" alt="Podpis alternatywny">
+  <img src="img\import\overdrive_effect_B_Cu.png" width="350" alt="Podpis alternatywny">
+  <img src="img\import\overdrive_effect_F_Silkscreen.png" width="350" alt="Podpis alternatywny">
+</p>
 
 ---
 
