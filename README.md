@@ -1,4 +1,4 @@
-# Ignis Overdrive Effect:fire::guitar:
+# Ignis Overdrive Effect :fire: :guitar:
 <p align="center">
   <img src="img\import\Animation_render_ezgif.com.gif" width="1200" alt="Podpis alternatywny">
 </p>
@@ -438,36 +438,55 @@ The project includes custom `.stl` files for a fully 3D-printable enclosure, des
 
 ## 6. Bill of materials
 
-| Reference   | Qty    | Value              | Description/Type                                    |
-| ----------- | ------ | ------------------ | --------------------------------------------------- |
-| BT1         | 1      | Battery connector  | Female 6F22 connector                               |
-| C1,C2       | 2      | 47u                | Electrolytic Capacitor THT 9V (Radial)              |
-| C3          | 1      | 470n               | Ceramic/Electrolytic Capacitor THT 9V               |
-| C4          | 1      | 220n               | Ceramic Capacitor THT 9V                            |
-| C5,C9       | 2      | 1u                 | Electrolytic Capacitor THT 9V (Radial)              |
-| C6          | 1      | 2,2u               | Electrolytic Capacitor THT 9V (Radial)              |
-| C7          | 1      | 100p               | Ceramic Capacitor THT 9V                            |
-| C8          | 1      | 22n                | Ceramic Capacitor THT 9V                            |
-| D1,D2       | 2      | 1N4148             | 1N4148 500mV                                        |
-| D3,D4       | 2      | LED                | Red LED THT D3.0mm                                  |
-| D5          | 1      | LED                | Red LED THT D5.0mm                                  |
-| FS1-9       | 1      | 3PDT               | 3PDT Bistable Footswitch M12                        |
-| J3          | 1      | Barrel_Jack_Switch | Standard 5.5 mm x 2.1 mm female DC supply connector |
-| Jack1,Jack2 | 2      | Audio Jack         | Female barrel jack 6.35mm - Thomann SK096\*         |
-| R1,R2,R6    | 3      | 10k                | Standard THT (1/4W)                                 |
-| R3          | 1      | 1M                 | Standard THT (1/4W)                                 |
-| R4          | 1      | 100k               | Standard THT (1/4W)                                 |
-| R5          | 1      | 1k                 | Standard THT (1/4W)                                 |
-| RV1         | 1      | 1M                 | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
-| RV2,RV3     | 2      | 10k                | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
-| Knob        | 3      | \-                 | 15x17mm Plastic Knob                                |
-| SW1, SW3    | 2      | \-                 | MTS 102 (with M6 Nut)                               |
-| SW2, SW4    | 2      | \-                 | MTS 103 (with M6 Nut)                               |
-| U1          | 1      | LM358              | Standard DIP-8                                      |
-| PCB         | 1      | \-                 | Professionally or DIY manufactured (files)          |
-| enclosure   | 1      | \-                 | 3D PETG Print bicolor (files)                       |
-| base        | 1      | \-                 | 3D PETG Print monocolor (files)                     |
-| LED holder  | 1      | \-                 | 3D PETG Print monocolor (files)                     |
-| M2 insert   | 9      | \-                 | M2x4mm                                              |
-| M2 screw    | 9      | \-                 | M2x6mm                                              |
-| wire        | \>5,5m | \-                 | AWG 22                                              |
+| Reference     | Qty    | Value              | Description/Type                                    |
+| ------------- | ------ | ------------------ | --------------------------------------------------- |
+| BT1           | 1      | Battery connector  | Female 6F22 connector                               |
+| C1,C2         | 2      | 47u                | Electrolytic Capacitor THT 9V (Radial)              |
+| C3            | 1      | 470n               | Ceramic/Electrolytic Capacitor THT 9V               |
+| C4            | 1      | 220n               | Ceramic Capacitor THT 9V                            |
+| C5,C9         | 2      | 1u                 | Electrolytic Capacitor THT 9V (Radial)              |
+| C6            | 1      | 2,2u               | Electrolytic Capacitor THT 9V (Radial)              |
+| C7            | 1      | 100p               | Ceramic Capacitor THT 9V                            |
+| C8            | 1      | 22n                | Ceramic Capacitor THT 9V                            |
+| D1,D2         | 2      | 1N4148             | 1N4148 500mV                                        |
+| D3,D4         | 2      | LED                | Red LED THT D3.0mm                                  |
+| D5            | 1      | LED                | Red LED THT D5.0mm                                  |
+| FS1-9         | 1      | 3PDT               | 3PDT Bistable Footswitch M12                        |
+| J3            | 1      | Barrel_Jack_Switch | Standard 5.5 mm x 2.1 mm female DC supply connector |
+| Jack1,Jack2   | 2      | Audio Jack         | Female barrel jack 6.35mm - Thomann SK096\*         |
+| R1,R2,R6      | 3      | 10k                | Standard THT (1/4W)                                 |
+| R3            | 1      | 1M                 | Standard THT (1/4W)                                 |
+| R4            | 1      | 100k               | Standard THT (1/4W)                                 |
+| R5            | 1      | 1k                 | Standard THT (1/4W)                                 |
+| RV1           | 1      | 1M                 | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
+| RV2,RV3       | 2      | 10k                | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
+| Knob          | 3      | \-                 | 15x17mm Plastic Knob                                |
+| SW1, SW3      | 2      | \-                 | MTS 102 (with M6 Nut)                               |
+| SW2, SW4      | 2      | \-                 | MTS 103 (with M6 Nut)                               |
+| U1            | 1      | LM358              | Standard DIP-8                                      |
+| PCB           | 1      | \-                 | Professionally or DIY manufactured (files)          |
+| enclosure     | 1      | \-                 | 3D PETG Print bicolor (files)                       |
+| base          | 1      | \-                 | 3D PETG Print monocolor (files)                     |
+| LED holder    | 1      | \-                 | 3D PETG Print monocolor (files)                     |
+| M2 insert     | 9      | \-                 | M2x4mm                                              |
+| M2 screw      | 9      | \-                 | M2x6mm                                              |
+| wire          | \>5,5m | \-                 | AWG 22                                              |
+| heatshrink    | 60cm   | \-                 | <2mm                                                |
+| WAGO conector | 2      | \-                 | WAGO 221-412\*                                      |
+
+*- it can be easily replaced by similar element
+
+## 7.Assembly Notes
+
+1. Prepare all necessary components, 3D print the enclosure files (.stl), and fabricate the PCB (e.g., using the DIY toner transfer method) or order it from a manufacturer.
+2. Solder all through-hole components onto the PCB.
+3. Solder all connection wires to the board pads. A wire length of 12-13 cm is fully sufficient for routing.
+4. Solder wires to the toggle switches and potentiometers, securing all solder joints with heat shrink tubing.
+5. Pay close attention to the pin numbering on the silkscreen. Pins are numbered from 1 to 3 starting from the side with the printed text. Note that there is one clearly labeled exception to this rule.
+6. Solder the designated wires to the audio input and output jacks.
+7. Using a soldering iron, melt the 9 threaded inserts (M2) into their designated holes in the 3D-printed enclosure parts.
+8. Insert the potentiometers and switches through the front panel and screw them securely in place.
+9. Mount the audio jacks through the enclosure walls and connect their wires to the main board using WAGO connectors, it allows easy disasemblly.
+10. Glue the status LED and the DC power jack into their dedicated 3D-printed holders.
+11. Screw the assembled LED holder, the main PCB, and the DC jack holder into the enclosure while carefully guiding wires.
+12. Screw on the bottom base plate to close the enclosure and complete the assembly.
