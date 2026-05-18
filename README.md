@@ -1,4 +1,12 @@
 # Ignis Overdrive Effect :fire: :guitar:
+
+<p align="left">
+  <img src="https://img.shields.io/badge/EDA-KiCad_8.0-314CB6?style=flat&logo=kicad&logoColor=white" alt="KiCad">
+  <img src="https://img.shields.io/badge/CAD-Autodesk_Inventor-0696D7?style=flat&logo=autodesk&logoColor=white" alt="Autodesk Inventor">
+  <img src="https://img.shields.io/badge/Enclosure-3D_Printable-FF6C2A?style=flat&logo=bambulab&logoColor=white" alt="3D Printing">
+  <img src="https://img.shields.io/badge/Status-Tested_%26_Working-4C1?style=flat" alt="Status">
+</p>
+
 <p align="center">
   <img src="img\import\Animation_render_ezgif.com.gif" width="1200" alt="Podpis alternatywny">
 </p>
@@ -7,7 +15,9 @@
 
 ## 1. Project overview
 
-This project presents the complete design and mathematical analysis of a versatile, fully analog overdrive guitar pedal built around a operational amplifier.
+### 1.1 General Description
+
+This project presents the complete design and mathematical analysis of a versatile, fully analog overdrive guitar pedal built around an operational amplifier.
 At its core, the main amplification block delivers a massive voltage gain (up to 1000x), paired with a flexible multi segmented tonal shaping section. 
 
 > [!NOTE]
@@ -15,10 +25,14 @@ At its core, the main amplification block delivers a massive voltage gain (up to
 >* Hardware pre-amp bass switch to modify the low-end structure before clipping,
 >* Low-pass pre-amp filter integrated into the feedback loop, it actively works with gain and can be switched on and off,
 >* Customizable clipping: fast-switching silicon diodes and LEDs, hard and soft clipping.
->* Final refinitions through a classic passive Tone control (lowpass filter),
+>* Final refinements through a classic passive Tone control (lowpass filter),
 >* Master volume stage with DC-blocking (static high pass filter), 
 
 The end result is a highly customizable overdrive capable of spanning from a transparent, mid-focused crunch to a thick, saturated lead tone, demonstrating a practical understanding of circuit design and mathematical theory usage.
+
+### 1.2 Sound Demonstrations
+
+### 1.3 User Guide
 
 ---
 
@@ -36,14 +50,14 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 * **LED ON/OFF indicator** - it visually indicates when pedal is enabled.
 * **input block and output block** - standard 6.3mm audio jack receiving/sending the instrument signal.
 * **board input block** - Coupling capacitor with $V_{ref}$ resistance acts like differenting circuit and blocks DC voltage. Additionally this capacitor loads up to $V_{ref}$ 4.5V voltage that adds DC part to a signal.
-* **overdrive main block** - the core of the effect, based on the LM358 operational amplifier. It handles signal amplification based on featback loop impedances and features a versatile clipping section, offering a choice between fast-switching diodes and LEDs. It also includes tonal modifications: a switchable LPF in the feedback loop (SW3) to smooth out high-end fizz, and a pre-gain HPF (SW4) to control the low-end "mass" entering the clipping stage.
+* **overdrive main block** - the core of the effect, based on the LM358 operational amplifier. It handles signal amplification based on feedback loop impedances and features a versatile clipping section, offering a choice between fast-switching diodes and LEDs. It also includes tonal modifications: a switchable LPF in the feedback loop (SW3) to smooth out high-end fizz, and a pre-gain HPF (SW4) to control the low-end "mass" entering the clipping stage.
 * **passive lowpass filter** - the classic Tone control section.
-* **buffer** - effectivly separates signal proccesing blocks from influencing one another.
+* **buffer** - effectively separates signal proccesing blocks from influencing one another.
 * **static passive high pass filter with volume control** - output coupling capacitor blocks the internal $V_{ref}$ DC part, outputting a pure AC audio signal centered at 0V. Potentiometer acts as a voltage divider providing precise Master Volume control.
-* **Fidutials and mounting** - purely mechanical parts to mount and produce PCB.
+* **Fiducials and mounting** - purely mechanical parts to mount and produce PCB.
 * **LM358 power** - LM358 powering diagram.
 
-### 2.1 PCB Layout
+### 2.2 PCB Layout
 
 <p align="center">
   <img src="img\import\PCB_KiCAD.png" width="700" alt="Podpis alternatywny">
@@ -81,8 +95,8 @@ PNGs of files ready to thermotransfer (pdfs in img\import)
 
 ### 3.1 Derivation of cutoff frequency of coupling/decoupling capacitor
 
-In this derivision we consider loaded decoupling capacitor which makes lowpass filter (integrating circuit).
-The last derived equation in 3.1 is identical for coupling capacitor working with resistance (differentiating circuit), but it is different on laplace's s-domain, and in fourier analisys (phase and magnitude plots).
+In this derivation we consider loaded decoupling capacitor which makes lowpass filter (integrating circuit).
+The last derived equation in 3.1 is identical for coupling capacitor working with resistance (differentiating circuit), but it is different on laplace's s-domain, and in fourier analysis (phase and magnitude plots).
 
 #### Voltage divider equation:
 
@@ -296,7 +310,7 @@ $$R_{TH} > 4,5 \cdot 10^3 \Rightarrow R_{1,2} > 9 k\Omega$$
 ### 4.2 Pullup resistor
 
 Using $R = \frac{U_{loss}}{45\cdot 10^{-9}}$ (3.4).
-Maximal acceptable voltage drop is around $0,05 V$, so:
+Maximal acceptable voltage drop is around $0.05 V$, so:
 
 $$R_3 = \frac{0,05}{45\cdot 10^{-9}} \approx 1,111 \cdot 10^6 \Omega \approx 1 M\Omega$$
 
@@ -323,9 +337,9 @@ Gain potentiometer was also chosen based on construction standards, but to make 
 
 ### 4.5 Coupling/decoupling capacitors
 
-Decoupling $9V$source and $4,5V$($V_{ref}$) after volatge divider is done by $C_1$ and $C_2$. Values were chosen using Thevenin's method.
+Decoupling $9V$source and $4.5V$($V_{ref}$) after voltage divider is done by $C_1$ and $C_2$. Values were chosen using Thevenin's method.
 
-Capacitor $C_2$ works with $5 k\Omega$ resistance, we want to cutoff frequencies all above $0,01 Hz$:
+Capacitor $C_2$ works with $5 k\Omega$ resistance, we want to cutoff frequencies all above $0.01 Hz$:
 
 $$R_{TH} = \frac{10k \cdot 10k}{10k + 10k} = 5k\Omega$$
 
@@ -423,9 +437,6 @@ They can be enabled in soft clipping mode (in feedback loop), and in hardclippin
 <p align="center">
   <img src="model\render\enclosure.png" width="600" alt="Podpis alternatywny">
   <img src="model\render\base.png" width="600" alt="Podpis alternatywny">
-</p>
-
-<p align="center">
   <img src="model\render\input_holder.png" width="600" alt="Podpis alternatywny">
   <img src="model\render\led_holder.png" width="600" alt="Podpis alternatywny">
 </p>
@@ -438,41 +449,41 @@ The project includes custom `.stl` files for a fully 3D-printable enclosure, des
 
 ## 6. Bill of materials
 
-| Reference     | Qty    | Value              | Description/Type                                    |
-| ------------- | ------ | ------------------ | --------------------------------------------------- |
-| BT1           | 1      | Battery connector  | Female 6F22 connector                               |
-| C1,C2         | 2      | 47u                | Electrolytic Capacitor THT 9V (Radial)              |
-| C3            | 1      | 470n               | Ceramic/Electrolytic Capacitor THT 9V               |
-| C4            | 1      | 220n               | Ceramic Capacitor THT 9V                            |
-| C5,C9         | 2      | 1u                 | Electrolytic Capacitor THT 9V (Radial)              |
-| C6            | 1      | 2,2u               | Electrolytic Capacitor THT 9V (Radial)              |
-| C7            | 1      | 100p               | Ceramic Capacitor THT 9V                            |
-| C8            | 1      | 22n                | Ceramic Capacitor THT 9V                            |
-| D1,D2         | 2      | 1N4148             | 1N4148 500mV                                        |
-| D3,D4         | 2      | LED                | Red LED THT D3.0mm                                  |
-| D5            | 1      | LED                | Red LED THT D5.0mm                                  |
-| FS1-9         | 1      | 3PDT               | 3PDT Bistable Footswitch M12                        |
-| J3            | 1      | Barrel_Jack_Switch | Standard 5.5 mm x 2.1 mm female DC supply connector |
-| Jack1,Jack2   | 2      | Audio Jack         | Female barrel jack 6.35mm - Thomann SK096\*         |
-| R1,R2,R6      | 3      | 10k                | Standard THT (1/4W)                                 |
-| R3            | 1      | 1M                 | Standard THT (1/4W)                                 |
-| R4            | 1      | 100k               | Standard THT (1/4W)                                 |
-| R5            | 1      | 1k                 | Standard THT (1/4W)                                 |
-| RV1           | 1      | 1M                 | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
-| RV2,RV3       | 2      | 10k                | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
-| Knob          | 3      | \-                 | 15x17mm Plastic Knob                                |
-| SW1, SW3      | 2      | \-                 | MTS 102 (with M6 Nut)                               |
-| SW2, SW4      | 2      | \-                 | MTS 103 (with M6 Nut)                               |
-| U1            | 1      | LM358              | Standard DIP-8                                      |
-| PCB           | 1      | \-                 | Professionally or DIY manufactured (files)          |
-| enclosure     | 1      | \-                 | 3D PETG Print bicolor (files)                       |
-| base          | 1      | \-                 | 3D PETG Print monocolor (files)                     |
-| LED holder    | 1      | \-                 | 3D PETG Print monocolor (files)                     |
-| M2 insert     | 9      | \-                 | M2x4mm                                              |
-| M2 screw      | 9      | \-                 | M2x6mm                                              |
-| wire          | \>5,5m | \-                 | AWG 22                                              |
-| heatshrink    | 60cm   | \-                 | <2mm                                                |
-| WAGO conector | 2      | \-                 | WAGO 221-412\*                                      |
+| Reference      | Qty    | Value              | Description/Type                                    |
+| -------------- | ------ | ------------------ | --------------------------------------------------- |
+| BT1            | 1      | Battery connector  | Female 6F22 connector                               |
+| C1,C2          | 2      | 47u                | Electrolytic Capacitor THT 9V (Radial)              |
+| C3             | 1      | 470n               | Ceramic/Electrolytic Capacitor THT 9V               |
+| C4             | 1      | 220n               | Ceramic Capacitor THT 9V                            |
+| C5,C9          | 2      | 1u                 | Electrolytic Capacitor THT 9V (Radial)              |
+| C6             | 1      | 2.2u               | Electrolytic Capacitor THT 9V (Radial)              |
+| C7             | 1      | 100p               | Ceramic Capacitor THT 9V                            |
+| C8             | 1      | 22n                | Ceramic Capacitor THT 9V                            |
+| D1,D2          | 2      | 1N4148             | 1N4148 500mV                                        |
+| D3,D4          | 2      | LED                | Red LED THT D3.0mm                                  |
+| D5             | 1      | LED                | Red LED THT D5.0mm                                  |
+| FS1-9          | 1      | 3PDT               | 3PDT Bistable Footswitch M12                        |
+| J3             | 1      | Barrel_Jack_Switch | Standard 5.5 mm x 2.1 mm female DC supply connector |
+| Jack1,Jack2    | 2      | Audio Jack         | Female barrel jack 6.35mm - Thomann SK096\*         |
+| R1,R2,R6       | 3      | 10k                | Standard THT (1/4W)                                 |
+| R3             | 1      | 1M                 | Standard THT (1/4W)                                 |
+| R4             | 1      | 100k               | Standard THT (1/4W)                                 |
+| R5             | 1      | 1k                 | Standard THT (1/4W)                                 |
+| RV1            | 1      | 1M                 | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
+| RV2,RV3        | 2      | 10k                | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
+| Knob           | 3      | \-                 | 15x17mm Plastic Knob                                |
+| SW1, SW3       | 2      | \-                 | MTS 102 (with M6 Nut)                               |
+| SW2, SW4       | 2      | \-                 | MTS 103 (with M6 Nut)                               |
+| U1             | 1      | LM358              | Standard DIP-8                                      |
+| PCB            | 1      | \-                 | Professionally or DIY manufactured (files)          |
+| enclosure      | 1      | \-                 | 3D PETG Print bicolor (files)                       |
+| base           | 1      | \-                 | 3D PETG Print monocolor (files)                     |
+| LED holder     | 1      | \-                 | 3D PETG Print monocolor (files)                     |
+| M2 insert      | 9      | \-                 | M2x4mm                                              |
+| M2 screw       | 9      | \-                 | M2x6mm                                              |
+| wire           | \>5.5m | \-                 | AWG 22                                              |
+| heatshrink     | 60cm   | \-                 | <2mm                                                |
+| WAGO connector | 2      | \-                 | WAGO 221-412\*                                      |
 
 *- it can be easily replaced by similar element
 
