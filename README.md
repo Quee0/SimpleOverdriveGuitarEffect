@@ -1,4 +1,4 @@
-# :fire::guitar:Simple Overdrive Effect
+# Ignis Overdrive Effect:fire::guitar:
 <p align="center">
   <img src="img\import\Animation_render_ezgif.com.gif" width="1200" alt="Podpis alternatywny">
 </p>
@@ -46,9 +46,31 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 ### 2.1 PCB Layout
 
 <p align="center">
-  <img src="img\import\PCB_KiCAD.png" width="350" alt="Podpis alternatywny">
+  <img src="img\import\PCB_KiCAD.png" width="700" alt="Podpis alternatywny">
+</p>
+
+<p align="center">
+  <img src="overdrive_effect\export\overdrive_effect_PCB_render.png" width="700" alt="Podpis alternatywny">
+</p>
+
+<p align="center">
+  <img src="overdrive_effect\export\overdrive_effect_PCB_back_render.png" width="700" alt="Podpis alternatywny">
+</p>
+
+PCB Layout Features.
+Designed for maximum audio integrity, mechanical reliability, and DIY accessibility:
+* **Low Noise (Solid Ground Plane)**: A continuous copper pour acts as an EMI shield, drastically reducing noise.
+* **DIY & Fab-Friendly**: Intentionally routed as a single-sided board with wide traces and generous clearances. This makes it perfect for both home DIY etching (using thermotransfer) and professional, automated manufacturing.
+* **Easy wiring**: Silkscreen layer was carefully described to assure smooth assembly.
+* **Appropriate wire holes**: Apertures are wide enough for diverse wire usage.
+
+<p align="center">
   <img src="img\import\overdrive_effect_B_Cu.png" width="350" alt="Podpis alternatywny">
   <img src="img\import\overdrive_effect_F_Silkscreen.png" width="350" alt="Podpis alternatywny">
+</p>
+
+<p align="center">
+PNGs of files ready to thermotransfer (pdfs in img\import)
 </p>
 
 ---
@@ -395,3 +417,57 @@ Effect has 2 pair of diodes to choose from:
 They can be enabled in soft clipping mode (in feedback loop), and in hardclipping (disconnected from loop, shortened to ground).
 
 </details>
+
+## 5. 3D Printed Enclosure & Mechanicals
+
+<p align="center">
+  <img src="model\render\enclosure.png" width="600" alt="Podpis alternatywny">
+  <img src="model\render\base.png" width="600" alt="Podpis alternatywny">
+</p>
+
+<p align="center">
+  <img src="model\render\input_holder.png" width="600" alt="Podpis alternatywny">
+  <img src="model\render\led_holder.png" width="600" alt="Podpis alternatywny">
+</p>
+
+The project includes custom `.stl` files for a fully 3D-printable enclosure, designed from the ground up for mechanical reliability and easy assembly.
+* **Rigid Construction** - engineered for high structural stability. The enclosure easily withstands the mechanical stress of heavy footswitch stomping without flexing or bending.
+* **Modular Sub-Mounts** - features dedicated, small printable mounts for the LED indicator and DC power jack. Instead of painfully gluing these parts deep inside the main body, you can comfortably secure them to their sub-mounts first, making final assembly and future maintenance incredibly modular.
+* **Durable Fastening** - the design utilizes M2 heat-set threaded inserts, providing strong, reusable machine-screw connections for the backplate instead of easily stripped plastic threads.
+* **Accessible Dual-Color Graphics** - the front panel design allows for a professional, two-color aesthetic without the need for an AMS (Automatic Material System). The graphics are printed at a specific height, allowing you to achieve the dual-color look simply by pausing the print and manually swapping the filament.
+
+## 6. Bill of materials
+
+| Reference   | Qty    | Value              | Description/Type                                    |
+| ----------- | ------ | ------------------ | --------------------------------------------------- |
+| BT1         | 1      | Battery connector  | Female 6F22 connector                               |
+| C1,C2       | 2      | 47u                | Electrolytic Capacitor THT 9V (Radial)              |
+| C3          | 1      | 470n               | Ceramic/Electrolytic Capacitor THT 9V               |
+| C4          | 1      | 220n               | Ceramic Capacitor THT 9V                            |
+| C5,C9       | 2      | 1u                 | Electrolytic Capacitor THT 9V (Radial)              |
+| C6          | 1      | 2,2u               | Electrolytic Capacitor THT 9V (Radial)              |
+| C7          | 1      | 100p               | Ceramic Capacitor THT 9V                            |
+| C8          | 1      | 22n                | Ceramic Capacitor THT 9V                            |
+| D1,D2       | 2      | 1N4148             | 1N4148 500mV                                        |
+| D3,D4       | 2      | LED                | Red LED THT D3.0mm                                  |
+| D5          | 1      | LED                | Red LED THT D5.0mm                                  |
+| FS1-9       | 1      | 3PDT               | 3PDT Bistable Footswitch M12                        |
+| J3          | 1      | Barrel_Jack_Switch | Standard 5.5 mm x 2.1 mm female DC supply connector |
+| Jack1,Jack2 | 2      | Audio Jack         | Female barrel jack 6.35mm - Thomann SK096\*         |
+| R1,R2,R6    | 3      | 10k                | Standard THT (1/4W)                                 |
+| R3          | 1      | 1M                 | Standard THT (1/4W)                                 |
+| R4          | 1      | 100k               | Standard THT (1/4W)                                 |
+| R5          | 1      | 1k                 | Standard THT (1/4W)                                 |
+| RV1         | 1      | 1M                 | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
+| RV2,RV3     | 2      | 10k                | Standard 16mm Rotary Potentiometer (with M7 Nut)    |
+| Knob        | 3      | \-                 | 15x17mm Plastic Knob                                |
+| SW1, SW3    | 2      | \-                 | MTS 102 (with M6 Nut)                               |
+| SW2, SW4    | 2      | \-                 | MTS 103 (with M6 Nut)                               |
+| U1          | 1      | LM358              | Standard DIP-8                                      |
+| PCB         | 1      | \-                 | Professionally or DIY manufactured (files)          |
+| enclosure   | 1      | \-                 | 3D PETG Print bicolor (files)                       |
+| base        | 1      | \-                 | 3D PETG Print monocolor (files)                     |
+| LED holder  | 1      | \-                 | 3D PETG Print monocolor (files)                     |
+| M2 insert   | 9      | \-                 | M2x4mm                                              |
+| M2 screw    | 9      | \-                 | M2x6mm                                              |
+| wire        | \>5,5m | \-                 | AWG 22                                              |
