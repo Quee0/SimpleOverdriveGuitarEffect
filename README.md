@@ -476,7 +476,7 @@ The project includes custom `.stl` files for a fully 3D-printable enclosure, des
 
 *- it can be easily replaced by similar element
 
-## 7.Assembly Notes
+## 7. Assembly Notes
 
 1. Prepare all necessary components, 3D print the enclosure files (.stl), and fabricate the PCB (e.g., using the DIY toner transfer method) or order it from a manufacturer.
 2. Solder all through-hole components onto the PCB.
@@ -490,3 +490,16 @@ The project includes custom `.stl` files for a fully 3D-printable enclosure, des
 10. Glue the status LED and the DC power jack into their dedicated 3D-printed holders.
 11. Screw the assembled LED holder, the main PCB, and the DC jack holder into the enclosure while carefully guiding wires.
 12. Screw on the bottom base plate to close the enclosure and complete the assembly.
+
+## 8. License
+
+Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
+
+[![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
+
+[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
+[cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
+[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
