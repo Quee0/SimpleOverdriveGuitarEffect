@@ -34,6 +34,15 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 
 ### 1.3 User Guide
 
+* **Footswitch** - `Enable / disable` guitar effect,
+* **Level:** Master output volume control.
+* **Gain:** Adjusts the voltage amplification of the primary op-amp stage. Turn clockwise to increase the amount of overdrive and saturation.
+* **Tone** - Passive high-frequency roll-off. Turn clockwise for a brighter, sharper tone, or counter-clockwise for a darker, warmer sound.
+* **Clip** - `Hard / Soft` Clipping mode toggle. *Note: Different clipping modes inherently yield different overall volume and compression levels. You will likely need to compensate with the Level knob.*
+* **D** - `Fast-switching / None / LED` choose cliping diodes,
+* **Mass** - `II / I / III` choose how massive you want the tone to be, how much to amplify the bass.
+* **Bite** - `Off / On` Engages the feedback-loop smoothing capacitor (100pF). Turn it ON to roll off harsh high-end fizz and soften the overall clipping behavior.
+
 ---
 
 ## 2. Circuit
