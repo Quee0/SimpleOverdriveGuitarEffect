@@ -35,35 +35,35 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 <details>
 <summary><b>Soft Clipping, LED Diodes, Mass I, Bite ON, Mid Gain, Low Tone</b></summary>
 
-
+https://github.com/user-attachments/assets/1be89b33-93ce-4a43-86b3-0c42de0525c9
 
 </details>
 
 <details>
 <summary><b>Soft Clipping, LED Diodes, Mass I, Bite ON, Mid Gain, High Tone</b></summary>
 
-
+https://github.com/user-attachments/assets/2ba2562c-e011-4fdd-8f06-044c0ea2faf1
 
 </details>
 
 <details>
 <summary><b>Soft Clipping, LED Diodes, Mass II, Bite ON, Mid Gain, Mid Tone</b></summary>
 
-
-
-</details>
-
-<details>
-<summary><b>Soft Clipping, Fast-switching Diodes, Mass I, Bite ON, Mid Gain, Mid Tone</b></summary>
-
-
+https://github.com/user-attachments/assets/6c816d3a-e20a-423a-b53f-dbef71fd2bd0
 
 </details>
 
 <details>
 <summary><b>Soft Clipping, Fast-switching Diodes, Mass I, Bite ON, Mid Gain, Mid Tone</b></summary>
 
+https://github.com/user-attachments/assets/7a0f3d32-2f00-4b13-9497-afda9a19c826
 
+</details>
+
+<details>
+<summary><b>Soft Clipping, Fast-switching Diodes, Mass I, Bite ON, Mid Gain, Mid Tone</b></summary>
+
+https://github.com/user-attachments/assets/31108739-4f4a-404e-89c9-3ae1a5144b9c
 
 </details>
 
