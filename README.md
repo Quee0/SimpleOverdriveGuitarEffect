@@ -32,6 +32,41 @@ The end result is a highly customizable overdrive capable of spanning from a tra
 
 ### 1.2 Sound Demonstrations
 
+<details>
+<summary><b>Soft Clipping, LED Diodes, Mass I, Bite ON, Mid Gain, Low Tone</b></summary>
+
+
+
+</details>
+
+<details>
+<summary><b>Soft Clipping, LED Diodes, Mass I, Bite ON, Mid Gain, High Tone</b></summary>
+
+
+
+</details>
+
+<details>
+<summary><b>Soft Clipping, LED Diodes, Mass II, Bite ON, Mid Gain, Mid Tone</b></summary>
+
+
+
+</details>
+
+<details>
+<summary><b>Soft Clipping, Fast-switching Diodes, Mass I, Bite ON, Mid Gain, Mid Tone</b></summary>
+
+
+
+</details>
+
+<details>
+<summary><b>Soft Clipping, Fast-switching Diodes, Mass I, Bite ON, Mid Gain, Mid Tone</b></summary>
+
+
+
+</details>
+
 ### 1.3 User Guide
 
 * **Footswitch** - `Enable / disable` guitar effect,
@@ -509,7 +544,7 @@ The project includes custom `.stl` files for a fully 3D-printable enclosure, des
 9. Mount the audio jacks through the enclosure walls and connect their wires to the main board using WAGO connectors, it allows easy disasemblly.
 10. Glue the status LED and the DC power jack into their dedicated 3D-printed holders.
 11. Screw the assembled LED holder, the main PCB, and the DC jack holder into the enclosure while carefully guiding wires.
-12. Screw on the bottom base plate to close the enclosure and complete the assembly.
+12. Screw on the bottom base plate to close the enclosure and complete the assembly. *You can optionaly add adhesive rubber pads*
 
 ## 8. License
 
