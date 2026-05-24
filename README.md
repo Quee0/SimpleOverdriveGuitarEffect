@@ -101,6 +101,11 @@ https://github.com/user-attachments/assets/31108739-4f4a-404e-89c9-3ae1a5144b9c
 * **Fiducials and mounting** - purely mechanical parts to mount and produce PCB.
 * **LM358 power** - LM358 powering diagram.
 
+> [!NOTE]
+> Upon later revision there are 2 possible further impovements:
+> * While setting $V_{ref}$ use buffor to further stabilize reference potential point.
+> * Add protective resistance to output of an op amp in main overdrive block.
+
 ### 2.2 PCB Layout
 
 <p align="center">

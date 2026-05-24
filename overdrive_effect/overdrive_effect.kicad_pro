@@ -567,7 +567,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "C:/Users/zzapa/Desktop/",
+      "plot": "gerber_files/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../model/import/PCB_V1.1.step",
