@@ -531,6 +531,9 @@ The project includes custom `.stl` files for a fully 3D-printable enclosure, des
 
 *- it can be easily replaced by similar element
 
+> [!NOTE]
+> Note: The total estimated cost of manufacturing this project (including all electronic components, PCB fabrication, and 3D printing materials) is around `$28` / `€24`, offering boutique-level versatility at a fraction of the retail price.
+
 ## 7. Assembly Notes
 
 1. Prepare all necessary components, 3D print the enclosure files (.stl), and fabricate the PCB (e.g., using the DIY toner transfer method) or order it from a manufacturer.
@@ -545,6 +548,25 @@ The project includes custom `.stl` files for a fully 3D-printable enclosure, des
 10. Glue the status LED and the DC power jack into their dedicated 3D-printed holders.
 11. Screw the assembled LED holder, the main PCB, and the DC jack holder into the enclosure while carefully guiding wires.
 12. Screw on the bottom base plate to close the enclosure and complete the assembly. *You can optionaly add adhesive rubber pads*
+
+<details>
+<summary><b>DIY production photos</b></summary>
+
+<img src="img\import\diy_assembly\diy1.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy2.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy3.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy4.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy5.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy6.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy7.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy8.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy9.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy10.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy11.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy12.jpg" alt="Podpis alternatywny">
+<img src="img\import\diy_assembly\diy13.jpg" alt="Podpis alternatywny">
+
+</details>
 
 ## 8. License
 
