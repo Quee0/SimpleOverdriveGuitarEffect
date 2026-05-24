@@ -217,7 +217,7 @@ $$A=20\cdot \log\left(\frac{K}{\sqrt{1+\omega^2 T^2}}\right)$$
 
 Cutoff condition:
 
-$A(\omega_{-3dB})=A(0)-3$$
+$$A(\omega_{-3dB})=A(0)-3$$
 
 $$20\cdot \log\left(\frac{K}{\sqrt{1+\omega^2 T^2}}\right)=20\cdot \log\left(\frac{K}{\sqrt{1+0^2 T^2}}\right)-3$$
 
@@ -320,7 +320,7 @@ Considering only $1M\Omega$ potentiometer and using information derived in 3.1:
 
 $$G(s) = \frac{R_{V1}}{R_5+ \frac{1}{sC_4}} + 1 = \frac{sR_{V1} C_4}{sR_5 C_4 + 1} + 1 = \frac{1 + sC_4(R_{V1} + R_5)}{1 + sR_5C_4}$$
 
-To calculate gain in somewhat same way that we derived 3.1$s = j\omega$:
+To calculate gain in somewhat same way that we derived 3.1 $s = j\omega$ :
 
 $$G(j\omega) = \frac{1 + j\omega C_4(R_{V1} + R_5)}{1 + j\omega R_5C_4} = [\frac{1+\omega^2 C_4^2 R_5 (R_{V1}+R_5)}{1+\omega^2 R_5^2 C_4^2}] + j [\frac{\omega C_4 R_{V1}}{1+\omega^2 R_5^2 C_4^2}]$$
 
@@ -386,7 +386,7 @@ Gain potentiometer was also chosen based on construction standards, but to make 
 
 ### 4.5 Coupling/decoupling capacitors
 
-Decoupling $9V$source and $4.5V$($V_{ref}$) after voltage divider is done by $C_1$ and $C_2$. Values were chosen using Thevenin's method.
+Decoupling $9V$ source and $4.5V$($V_{ref}$) after voltage divider is done by $C_1$ and $C_2$. Values were chosen using Thevenin's method.
 
 Capacitor $C_2$ works with $5 k\Omega$ resistance, we want to cutoff frequencies all above $0.01 Hz$:
 
